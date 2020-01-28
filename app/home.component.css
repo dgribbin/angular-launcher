@@ -1,0 +1,9 @@
+/** No CSS for this example */
+mat-app-background {
+    background-color: #962e2e;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.active{
+  background-color: #77962e;
+}

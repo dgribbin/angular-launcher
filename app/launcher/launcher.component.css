@@ -1,0 +1,35 @@
+mat-card-header{
+  background: #12121212;
+  padding: 10px 1px;
+  color:black;
+}
+
+mat-card-content{
+  padding: 10px;
+}
+
+mat-card-content {
+  background-color: rgb(247, 247, 247);
+  color: rgb(5, 5, 5);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+mat-card{
+  padding:0;
+}
+
+.launch-button {
+  display: block;
+  min-width: 150px;
+  margin: 10px auto;
+  background: #78369e;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  padding: 1em;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+}
