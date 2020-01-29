@@ -5,7 +5,9 @@ import {LauncherComponent} from './app/launcher/launcher.component'
 
 const routes: Routes = [
    {path: 'launch' , component: LauncherComponent},
-    {path: 'process' , component: ProcessRunningComponent}
+    {path: 'process' , component: ProcessRunningComponent, outlet: "outlet1"},
+    {path: '', pathMatch: 'full', redirectTo: 'launch'}  
+
    
 ];
 

@@ -1,16 +1,21 @@
 <mat-card>
-  <mat-card-header>
-    <mat-card-title>Access Cloud UE</mat-card-title>
-    <mat-card-subtitle>Existing User</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <p>To launch your AVEVA Cloud UE WorkSpace and access the required services, please click on the Launch
-        button and wait from your WorkSpace to become available. This may take up to 5 minutes..</p>
-    <button (click)="add()" class="launch-button">
-    Launch 
-</button>
-<p>
-Please ensure you have sucessfully downloaded and installed the prerequisite Cloud UE desktop client. 
-</p>
-  </mat-card-content>
+	<mat-card-header>
+		<mat-card-title>Access Cloud UE</mat-card-title>
+		<mat-card-subtitle>Existing User</mat-card-subtitle>
+	</mat-card-header>
+	<mat-card-content>
+		<p>To access your AVEVA Cloud UE services, click on the Start Cloud UE
+			button and wait from your {{getTerm()}} to become available. Please by patient Your {{getTerm()}} may take
+			up to 5 minutes become available.</p>
+
+		<button mat-raised-button routerLink="/process" routerLinkActive="active" class="launch-button">Start Cloud UE</button>
+    <process-running></process-running>
+
+		<p>
+			Please ensure you have sucessfully downloaded and installed the prerequisite Cloud UE desktop client.
+		</p>
+	</mat-card-content>
 </mat-card>
+
+ <router-outlet  name="outlet1"></router-outlet> 
+ 
