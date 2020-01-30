@@ -7,6 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LauncherComponent implements OnInit {
 
+  public show:boolean = false;
+  public buttonName:any = 'Show';
+
   @Input()
   desktop_term: string = 'Cloud UE desktop'; 
     
@@ -14,6 +17,16 @@ export class LauncherComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleProgress() {
+    this.show = !this.show;
+
+    // CHANGE THE NAME OF THE BUTTON.
+    if(this.show)  
+      this.buttonName = "Hide";
+    else
+      this.buttonName = "Show";
   }
 }
 
