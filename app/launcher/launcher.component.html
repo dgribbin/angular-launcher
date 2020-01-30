@@ -4,16 +4,17 @@
 		<mat-card-subtitle>Existing User</mat-card-subtitle>
 	</mat-card-header>
 	<mat-card-content>
-    <p>Welcome back Declan.  Your {{desktop_term}} is currently stopped to conserve resources.</p>
+		<p>Welcome back Declan. Your {{desktop_term}} is currently stopped to conserve resources.</p>
 		<p>To access AVEVA Cloud UE services, click on the <b>Start Cloud UE</b>
-			button and wait from your {{desktop_term}} to become available. Please by patient Your  may take 
+			button and wait from your {{desktop_term}} to become available. Please by patient Your may take
 			up to 5 minutes become available.</p>
-
-		<button mat-raised-button (click)="toggleProgress()" class="launch-button">Start Cloud UE</button>
-
-    <ng-container *ngIf="show">
-    <process-running></process-running>
-</ng-container>
+    
+		<mat-button-toggle (click)="toggleProgress()">Start Cloud 
+      UE</mat-button-toggle>
+   
+		<ng-container *ngIf="show">
+			<process-running></process-running>
+		</ng-container>
 
 		<p>
 			Please ensure you have sucessfully downloaded and installed the prerequisite Cloud UE desktop client.
@@ -21,6 +22,4 @@
 	</mat-card-content>
 </mat-card>
 
- <router-outlet  name="outlet1"></router-outlet> 
-
- 
+<router-outlet name="outlet1"></router-outlet>
