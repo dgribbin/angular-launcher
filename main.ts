@@ -13,8 +13,11 @@ import {HomeComponent} from './app/home.component';
 import {LauncherComponent} from './app/launcher/launcher.component';
 import {ProcessRunningComponent} from './app/process-running/process-running.component';
 
-//import { RoutingComponents } from './app-routing-module';
 import { WSAppRoutingModule } from './app-routing-module';
+import { NavigationComponent } from './app/navigation/navigation.component';
+
+import { ConstantsService } from './app/constants.service';
+
 
 @NgModule({
   imports: [
@@ -31,10 +34,11 @@ import { WSAppRoutingModule } from './app-routing-module';
   declarations: [
     HomeComponent, 
     LauncherComponent,
-    ProcessRunningComponent
+    ProcessRunningComponent,
+    NavigationComponent
   ],
   bootstrap: [HomeComponent],
-  providers: []
+  providers: [ConstantsService]
 })
 export class AppModule {}
 

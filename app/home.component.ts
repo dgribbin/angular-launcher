@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
+import { ConstantsService } from './constants.service';
 
 /**
  * @title Basic cards
@@ -11,8 +12,11 @@ import { Router } from "@angular/router";
 })
 export class HomeComponent {
   title = "app";
+  wsname:string;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private _constant: ConstantsService) {  
+    this.wsname=this._constant.workspaceName;
+  }
 }
 
 /**  Copyright 2019 Google Inc. All Rights Reserved.

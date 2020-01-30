@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'launcher',
@@ -7,17 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LauncherComponent implements OnInit {
 
-    
+  @Input()
+  desktop_term: string = 'Cloud UE desktop'; 
     
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  getTerm(){
-    return 'WorkSpace';
-  }
-
 }
 

@@ -4,8 +4,9 @@
 		<mat-card-subtitle>Existing User</mat-card-subtitle>
 	</mat-card-header>
 	<mat-card-content>
-		<p>To access your AVEVA Cloud UE services, click on the Start Cloud UE
-			button and wait from your {{getTerm()}} to become available. Please by patient Your {{getTerm()}} may take
+    <p>Your {{desktop_term}} is currently stopped.</p>
+		<p>To access AVEVA Cloud UE services, click on the <b>Start Cloud UE</b>
+			button and wait from your {{desktop_term}} to become available. Please by patient Your  may take 
 			up to 5 minutes become available.</p>
 
 		<button mat-raised-button routerLink="/process" routerLinkActive="active" class="launch-button">Start Cloud UE</button>
@@ -18,4 +19,5 @@
 </mat-card>
 
  <router-outlet  name="outlet1"></router-outlet> 
+
  
