@@ -33,3 +33,36 @@ mat-card{
   cursor: pointer;
   border: 0;
 }
+
+mat-button-toggle {
+    border: 1px rgba(0,0,0,0) solid !important;
+    margin-top: 5px !important;
+    padding: 0 5px !important;
+    z-index: 3 !important;
+    background: #78369e;
+    color: #FFFFFF;
+    text-align: center;    
+    min-width: 150px;
+    width: fit-content;
+    display: block; 
+    margin: 0 auto;
+}
+
+mat-button-toggle:hover {
+    border: 1px #000 solid !important;
+    background-color: rgb(39, 124, 18) !important;
+    border-radius: 5px !important;
+}
+
+.mat-button-toggle-checked {
+	  box-shadow: 0 0 10px #000 !important;
+    border: 1px rgb(39, 124, 18) solid !important;
+    border-radius: 5px !important;
+    background-color: #0d76c7 !important;
+    color: rgb(245, 239, 239);
+}
+
+.mat-button-toggle-input {
+    background-color: none !important;
+    padding-left: 32px !important;
+}

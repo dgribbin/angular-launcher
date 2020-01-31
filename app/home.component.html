@@ -1,15 +1,32 @@
- 
- <button mat-raised-button routerLink="/launch" routerLinkActive="active">Launch</button>
- <button mat-raised-button routerLink="/process" routerLinkActive="active">Process</button>
-  <p></p>
+<app-navigation></app-navigation>
 
 
- <router-outlet></router-outlet>
-
-
-
-
-
-
-  
-  
+<!-- <mat-toolbar class="mat-elevation-z6" color="primary">
+  <mat-toolbar-row>
+    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" >
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    Cloud Unified Engineering
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation">
+    <mat-nav-list>
+      <a mat-list-item routerLink='/process'>First Component</a>
+      <a mat-list-item routerLink='/launch'>Second Component</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <p></p>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+<!--<mat-drawer-container class="example-container">
+  <mat-drawer #drawer mode="side" opened>
+    <a mat-list-item routerLink='/first'>First Component</a>
+    <a mat-list-item routerLink='/second'>Second Component</a>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>-->

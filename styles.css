@@ -1,15 +1,25 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import 'bluetheme.css';
 
 body { 
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
+  background-color: ffffff;  
 }
 
-.basic-container {
-  padding: 30px;
+.content-container {
+  display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+    grid-gap: 5px;
+    align-items: stretch;
+    justify-items: center;    
 }
 
 .version-info {
   font-size: 8pt;
   float: right;
 }
+
+
+
+
