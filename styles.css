@@ -1,10 +1,10 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 @import 'bluetheme.css';
 
 body { 
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
-  background-color: red;  
+  background-color: ffffff;  
 }
 
 .content-container {
