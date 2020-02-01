@@ -1,18 +1,22 @@
 
 
 .example-container {
-  /* background-color: #ca3e3e;  */
+  background-color: #ca3e3e; 
   /* display: flex;  */
-  /* margin: 10px; */
-  height: 100vh;
-  justify-content:center;
+  /* margin: 100px; */
+  margin-left: 20%;
+  margin-right: 30px;
+  /* height: 100vh; */
+  /* justify-content:center; */
+  
 }
 
 .main-content{
   margin: 10px;
   background-color: #ffffff;
   justify-content:center;
-  width: 80%;
+  /* width: 100vw;*/
+  height: 80vh;   
   
 }
 

@@ -22,10 +22,12 @@
     </mat-nav-list>
   </mat-sidenav>
 
-  <mat-sidenav-content fullscreen >    
-    CONTENT
-    <router-outlet></router-outlet>   
-    CONTENT 
+  <mat-sidenav-content >    
+    
+    <div class="main-content">
+      <router-outlet></router-outlet>   
+    </div>
+     
   </mat-sidenav-content>
 
 </mat-sidenav-container>
@@ -33,9 +35,7 @@
 <mat-toolbar class="mat-elevation-z6 navbar" color="primary">
     <span fxFlex></span>
 
-    <div class="text-white" fxLayout="row">
-        <button mat-button class="mr-4" (click)="basicModal.show()">שכחתי סיסמא</button>
-        <button mat-button routerLink="/help" class="mr-4">עזרה</button>
-        <button mat-button routerLink="/terms" class="mr-4">תנאי שימוש</button>
+    <div class="" fxLayout="row">
+        <button mat-button routerLink="/help" >help</button>
     </div>
 </mat-toolbar>
