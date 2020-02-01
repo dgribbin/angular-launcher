@@ -3,7 +3,7 @@
 .example-container {
   /* background-color: #ca3e3e;  */
   /* display: flex;  */
-  margin: 10px;
+  /* margin: 10px; */
   height: 100vh;
   justify-content:center;
 }
@@ -15,7 +15,6 @@
   width: 80%;
   
 }
-
 
     
 

@@ -17,6 +17,7 @@ import { WSAppRoutingModule } from './app-routing-module';
 import { NavigationComponent } from './app/navigation/navigation.component';
 
 import { ConstantsService } from './app/constants.service';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ConstantsService } from './app/constants.service';
     AllMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    WSAppRoutingModule    
+    WSAppRoutingModule,
+    FlexLayoutModule    
   ],
   entryComponents: [HomeComponent],
   declarations: [
