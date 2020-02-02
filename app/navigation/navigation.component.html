@@ -19,7 +19,14 @@
     <!-- Side bar menu options -->
     <mat-nav-list>
       <a mat-list-item routerLink='/process'>Processing</a>
-      <a mat-list-item routerLink='/launch'>Launch</a>
+      <!-- <a mat-list-item routerLink='/launch'>Launch</a>
+      <a mat-list-item routerLink="/launch" [state]="{ id:1 , name:'Angular'}">Dynamic Data</a>
+      <a mat-list-item routerLink="/launch" [state]=product>Dynamic Dataeeee</a>
+      
+      <a mat-list-item routerLink="/launch" [state]="{ name: 'world' }">Go</a>
+      <a mat-list-item routerLink="/launch", "{ name: 'world' }">work</a> -->
+
+      <a mat-list-item (click)="startWorkSpaceLayout()">Start</a>
     </mat-nav-list>
   </mat-sidenav>
 
