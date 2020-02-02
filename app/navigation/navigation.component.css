@@ -1,13 +1,14 @@
 
 
-.example-container {
-  background-color: #ca3e3e; 
+.container {
+  background-color: #ffffff; 
   /* display: flex;  */
   /* margin: 100px; */
-  margin-left: 20%;
-  margin-right: 30px;
+  /* margin-left: 20%; */
+  /* margin-right: 10px; */
   /* height: 100vh; */
   /* justify-content:center; */
+  width: 60vw;
   
 }
 
@@ -17,6 +18,14 @@
   justify-content:center;
   /* width: 100vw;*/
   height: 80vh;   
+  
+}
+
+content-component{
+  margin: 10px;
+  background-color: #2e1f1f;
+  justify-content:center;
+  width: 34vw;
   
 }
 
