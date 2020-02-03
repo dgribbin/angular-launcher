@@ -1,12 +1,70 @@
-<p>
-creator works!
-  
-</p>
- 
-
- <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
+<!-- <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
  
  <button mat-button>
     <mat-icon>mic</mat-icon>
     Start Recording
-</button>
+</button> -->
+
+<!-- <div class="wrapper">  -->
+
+<mat-card class="example-card">
+	<mat-card-header>
+		<mat-card-title>Getting Started</mat-card-title>
+		<mat-card-subtitle>New User</mat-card-subtitle>
+	</mat-card-header>
+	<mat-card-content class="card-content">
+		<p> If this is the first time using the AVEVA Cloud UE service, in order to securely access your dedicated AVEVA
+			Cloud UE WorkSpace, please</p>
+
+
+		
+			
+         <div class='step'>
+				<p>
+         <mat-icon class='num'>looks_one</mat-icon>
+					Visit the Amazon Web Services WorkSpaces site and download and install the latest Amazon WorkSpace
+					client
+					application for Windows from the AWS web site. This enables AVEVA to delivery secure, high
+					performance Cloud UE services.<br>
+					<button mat-raised-button color="accent" (click)="window.open('https://clients.amazonworkspaces.com/')">
+            <mat-icon>cloud_download</mat-icon>
+            Download AWS WorkSpace Client
+          </button>
+					<!-- <button class="download" target="_blank" rel="noopener noreferrer"
+                onClick="window.open('https://clients.amazonworkspaces.com/')">Download AWS WorkSpace Client</button> -->
+            
+				</p>
+        </div>
+			
+			<li>
+				<p>
+          <mat-icon>looks_two</mat-icon>
+					Download and Install the AVEVA Cloud UE integration client.<br>
+					<!-- <button class="download" target="_blank" rel="noopener noreferrer"
+                onClick="/assets/downloads/RegisterAVEVAWorkspacesHandler.reg">Download AVEVA Add-on</button> -->
+                
+            <button mat-raised-button color="accent" (click)="assets/downloads/RegisterAVEVAWorkspacesHandler.reg">
+            <mat-icon>cloud_download</mat-icon>
+              Download AVEVA Add-on
+          </button>
+				</p>
+			</li>
+			<li>
+				<p>
+					You are now ready to created your dedicated Cloud UE desktop. Click the Create button below to start
+					this proces. This may take up to 20 minutes, so please be patient.<br>
+          
+					<!-- <button class="download" target="_blank" rel="noopener noreferrer"
+                onClick="/assets/downloads/">Create Cloud UE Desktop</button> -->
+          <button mat-raised-button color="accent" (click)="assets/downloads/RegisterAVEVAWorkspacesHandler.reg">
+            <mat-icon>desktop_windows</mat-icon>
+              Create Cloud UE Desktop
+          </button>
+				</p>
+			</li>
+		
+	</mat-card-content>
+
+</mat-card>
+
+<!-- </div> -->
