@@ -4,20 +4,21 @@
 		<mat-card-subtitle>Existing User</mat-card-subtitle>
 	</mat-card-header>
 	<mat-card-content>
-		<p>Welcome back Declan. Your {{desktop_term}} is currently stopped to conserve resources and carry out any essential maintenance.</p>
-		<p>To access AVEVA Cloud UE services, click on the <b>Start Cloud UE</b>
+		<p>Welcome back Declan. Your {{desktop_term}} is currently {{workspaceState.workspaceState}} to conserve resources and allow for any essential maintenance.</p>
+		<p>To access AVEVA Cloud UE services, click on the <b>{{workspaceState.workspaceStateToBe}} Cloud UE</b>
 			button and wait from your {{desktop_term}} to become available. Please by patient Your may take
 			up to 5 minutes become available.</p>
+
+      <div ng-if="workspaceState.workspaceState='stopped'">{{workspaceState.workspaceState}}</div>
     
-		<mat-button-toggle (click)="toggleProgress()">Launching Cloud 
+		<mat-button-toggle (click)="toggleProgress()">{{workspaceState.workspaceStateToBe}} Cloud 
       UE</mat-button-toggle>
-   
+      
 		<ng-container *ngIf="show">
 			<process-running></process-running>
 		</ng-container>
 
 		<p>
-      {{workspaceState.workspaceStateToBe}} workspaceState.workspaceStateToBe
 			To use AVEVA Cloud Unified Engineering Please ensure you have sucessfully downloaded and installed the prerequisite Cloud UE desktop client.
 		</p>
 	</mat-card-content>

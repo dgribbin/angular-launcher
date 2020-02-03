@@ -15,8 +15,8 @@ import {ProcessRunningComponent} from './app/process-running/process-running.com
 
 import { WSAppRoutingModule } from './app-routing-module';
 import { NavigationComponent } from './app/navigation/navigation.component';
+import { CreatorComponent } from './app/creator/creator.component';
 
-import { ConstantsService } from './app/constants.service';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 
@@ -36,17 +36,12 @@ import { FlexLayoutModule } from "@angular/flex-layout";
   declarations: [
     HomeComponent, 
     LauncherComponent,
+    CreatorComponent,
     ProcessRunningComponent,
     NavigationComponent
   ],
-  bootstrap: [HomeComponent],
-  providers: [ConstantsService]
+  bootstrap: [HomeComponent]
 })
 export class AppModule {}
 
 platformBrowserDynamic().bootstrapModule(AppModule);
-
-
-/**  Copyright 2019 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */

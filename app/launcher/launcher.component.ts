@@ -5,6 +5,8 @@ import { Routes, RouterModule, Router } from "@angular/router";
 import { Component, OnInit, Input } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 
+import {WorkspaceStateLabels} from "../workspaceStateLabels";
+
 @Component({
   selector: "launcher",
   templateUrl: "./launcher.component.html",
@@ -16,7 +18,7 @@ export class LauncherComponent implements OnInit {
   @Input()
   desktop_term: string = "Cloud UE desktop";
 
-  public workspaceState: any; 
+  public workspaceState: WorkspaceStateLabels = new WorkspaceStateLabels(); 
   // constructor(private router : Router) {}
 
   // ngOnInit() {
@@ -28,6 +30,7 @@ export class LauncherComponent implements OnInit {
 
   ngOnInit() {
     //console.log(history.state);
+    // this.workspaceState = new WorkspaceStateLabels();
     this.workspaceState = history.state;
     console.log(`this.workspaceState = ${this.workspaceState.workspaceStateToBe}`);
   }
